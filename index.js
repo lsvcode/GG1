@@ -3,11 +3,11 @@
 // let coin = 0;
 
 
-const form = document.getElementById('form-login');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  window.location.href = "game.html";
-});
+// const form = document.getElementById('form-login');
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault();
+//   window.location.href = "game.html";
+// });
 
 
 const user = {};
@@ -49,5 +49,21 @@ function coinFlip() {
 }
 
 function switchPage(from, to) {
-  
+  if(from === 'page1'){
+    if(!user){
+      return
+    }
+    document.querySelector('#' + from).style.display = 'none'
+    document.querySelector('#' + to).style.display = 'flex'
+  } else if(from === 'page2' && to === 'page3'){
+    document.querySelector('#' + from).style.display = 'none'
+    document.querySelector('#' + to).style.display = 'flex'
+  } else if( from === 'page3' && to === 'page2'){
+    document.querySelector('#' + from).style.display = 'none'
+    document.querySelector('#' + to).style.display = 'flex'
+  }  else {
+    document.querySelector('#page3').style.display = 'none'
+    document.querySelector('#' + from).style.display = 'none'
+    document.querySelector('#' + to).style.display = 'block'
+  } 
 }
