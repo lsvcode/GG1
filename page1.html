@@ -1,0 +1,116 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKBET99</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  
+  <body>
+    <div class="navbar">
+      <a class="active" href="#page1">Home</a>
+      <a href="#page2">Flip Coin</a>
+      <a href="#page3">Checkout</a>
+    </div>
+
+    <div id="page1">
+    <h1 class="menu-title">Dewa Judi Pernah Disini</h1>
+
+    <div class="content">
+      <p class="p-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+      <br />
+      <p class="p-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+      <br />
+      </div>
+
+        <div id="form-login">
+        <label for="username" class="p-form">Username</label><br />
+        <input type="text" id="username" name="username" placeholder="masukan username" required /><br /><br />
+        <label for="deposit" class="p-form">Deposit Uang</label><br />
+        <input type="text" id="deposit" name="deposit" placeholder="masukan deposit" required /><br /><br />
+        <button class="button" onclick="nextPage('page1','page2')" id="submit-button">submit</button>
+        </div>
+    </div>
+
+    <!--Dibawah ini tidak usah-->
+    <div id="page2" style="display: none;">
+      <h1 id="greetingsNama">Halo, sdasda</h1>
+      <h2 id="silakan">Silakan Simulasikan Pinjamanmu</h2>
+      <div class="kanan">
+        <section id="gambarbiru">
+          <div id="justify">
+            <label class="font" for="amount">Biaya Pinjaman :</label>
+            <input class="loan" id="amount" type="number" value="1000000" onkeyup="calculateLoan()"><br><br>
+            <div class="container">
+              <label class="font" for="lamaPinjaman">Durasi Pinjaman dalam bulan
+              </label><br><br>
+              <label class="font" for="1">1</label>
+              <input class="radio" type="radio" name="month" id="1" checked="" onclick="calculateLoan()" value="1">
+              <label class="font" for="3">3</label>
+              <input class="radio" type="radio" name="month" id="3" onclick="calculateLoan()" value="3">
+              <label class="font" for="6">6</label>
+              <input class="radio" type="radio" name="month" id="6" onclick="calculateLoan()" value="6">
+              <label class="font" for="9">9</label>
+              <input class="radio" type="radio" name="month" id="9" onclick="calculateLoan()" value="9">
+              <label class="font" for="12">12</label>
+              <input class="radio" type="radio" name="month" id="12" onclick="calculateLoan()" value="12">
+            </div>
+            <br>
+            <span class="font" id="tenorBulanan">Pembayaran Bulanan anda </span>
+            <h2 id="payment">1050000</h2><br><br><span class="font">Jatuh Tempo </span>
+            <h2 id="jatuhTempo">24-3-2022</h2><br><button class="button" onclick="nextPage('page2','page1')">Back</button>
+            <button class="button" onclick="nextPage('page2','page3')">Next</button>
+        </div></section>
+      </div>
+    </div>
+    
+    <div id="page3" style="display: none;">
+      <h1 id="summaryNama">Halo,
+        nama</h1>
+      <h1 id="summaryKTP">KTP: </h1>
+      <p class="font">BERIKUT ADALAH RINGKASAN PINJAMAN</p>
+      <ul>
+        <li class="font" id="summaryTotalPinjaman">Total Pinjaman : Rp. xxx xxx xxx</li>
+        <li class="font" id="summaryTenor">Tenor : x Bulan</li>
+        <li class="font" id="summaryBulanan">Bulanan : Rp. xxx.xxx.xxx</li>
+        <li class="font" id="summaryJatuhTempo">Jatuh Tempo: dd-mm-yyyy</li>
+      </ul>
+      <label class="font" for="noRek">Nomor Rekening</label>
+      <input type="number" name="noRek" id="noRek" required="">
+      <div id="confirm">
+        <button class="button" onclick="nextPage('page3','page2')">Back</button>
+        <button class="button" onclick="nextPage('page3','page4')">OK</button>
+      </div>
+      <div id="page4" class="font">
+        <div>
+          <h1>SELAMAT ! PINJAMAN ANDA TELAH DISETUJUI</h1>
+          <h2>Uang Pinjaman akan dikirimkan ke rekening anda : <span id="rekeningDisplay"></span></h2><button class="button" onclick="nextPage('page4','page1')">Back</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  
