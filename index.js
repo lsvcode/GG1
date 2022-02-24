@@ -87,6 +87,9 @@ tailsButton.addEventListener('click', coinFlipTails);
 headsButton.addEventListener('click', coinFlipHead);
 
 function coinFlipHead() {
+  if (coin <= 0) {
+    return alert("Coin habis, mohon deposit ulang")
+  }
   let randomNumber = getRandomNumber();
   outcome.textContent = '';
   outcome.classList.toggle('flip');
@@ -118,6 +121,9 @@ function coinFlipHead() {
 }
 
 function coinFlipTails() {
+  if (coin <= 0) {
+    return alert("Coin habis, mohon deposit ulang")
+  }
   let randomNumber = getRandomNumber();
   outcome.textContent = '';
   outcome.classList.toggle('flip');
