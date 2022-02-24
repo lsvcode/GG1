@@ -8,6 +8,8 @@ function getData() {
   coin = deposito / 100;
   document.getElementById("coin").innerText = `Coins: ${coin}`
   document.getElementById("user-id").innerText = `Username: ${nama}`
+  document.getElementById("coin2").innerText = `Coins: ${coin}`
+  document.getElementById("user-id2").innerText = `Username: ${nama}`
   console.log(nama, deposito, coin);
 }
 
@@ -15,45 +17,56 @@ function getData() {
 
 function nextPage(from, to) {
   getData();
+  if (!nama || !deposito) {
+    return alert('Masukkan data');
+  }
   if(from === 'page1'){
     document.querySelector('#' + from).style.display = 'none'
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
+    document.querySelector('#nav-' + to).classList.add('active')
+    document.querySelector('#nav-' + from).classList.remove('active')
   } else if(from === 'page2' && to === 'page3'){
     document.querySelector('#' + from).style.display = 'none'
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
+    document.querySelector('#nav-' + to).classList.add('active')
+    document.querySelector('#nav-' + from).classList.remove('active')
   } else if( from === 'page3' && to === 'page2'){
     document.querySelector('#' + from).style.display = 'none'
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
+    document.querySelector('#nav-' + to).classList.add('active')
+    document.querySelector('#nav-' + from).classList.remove('active')
   }  else {
     document.querySelector('#page3').style.display = 'none'
     document.querySelector('#' + from).style.display = 'none'
     document.querySelector('#' + to).style.display = 'block'
+    document.querySelector('#nav-' + to).classList.add('active')
+    document.querySelector('#nav-' + from).classList.remove('active')
   }
 }
 
 
 function jumpPage(to) {
   if (to === 'page1') {
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
     document.querySelector('#page2').style.display = 'none'
     document.querySelector('#page3').style.display = 'none'
-    document.getElementById('page1').classList.add('active')
-    document.getElementById('page2').classList.remove('active')
-    document.getElementById('page3').classList.remove('active')
+    document.getElementById('nav-page1').classList.add('active')
+    document.getElementById('nav-page2').classList.remove('active')
+    document.getElementById('nav-page3').classList.remove('active')
   } else if (to === 'page2') {
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
     document.querySelector('#page1').style.display = 'none'
     document.querySelector('#page3').style.display = 'none'
-    document.getElementById('page2').classList.add('active')
-    document.getElementById('page1').classList.remove('active')
-    document.getElementById('page3').classList.remove('active')
+    document.getElementById('nav-page2').classList.add('active')
+    document.getElementById('nav-page1').classList.remove('active')
+    document.getElementById('nav-page3').classList.remove('active')
   } else if (to === 'page3') {
-    document.querySelector('#' + to).style.display = 'flex'
+    document.querySelector('#' + to).style.display = 'block'
     document.querySelector('#page1').style.display = 'none'
     document.querySelector('#page2').style.display = 'none'
-    document.getElementById('page3').classList.add('active')
-    document.getElementById('page1').classList.remove('active')
-    document.getElementById('page2').classList.remove('active')
+    document.getElementById('nav-page3').classList.add('active')
+    document.getElementById('nav-page1').classList.remove('active')
+    document.getElementById('nav-page2').classList.remove('active')
   }
 }
 
@@ -99,6 +112,7 @@ function coinFlipHead() {
     }
 
     document.getElementById("coin").innerText = `Coins: ${coin}` 
+    document.getElementById("coin2").innerText = `Coins: ${coin}` 
     outcome.classList.remove('toss');
   }, 800); 
 }
@@ -129,6 +143,7 @@ function coinFlipTails() {
     }
 
     document.getElementById("coin").innerText = `Coins: ${coin}`
+    document.getElementById("coin2").innerText = `Coins: ${coin}`
     outcome.classList.remove('toss');
   }, 800); 
 }
@@ -139,9 +154,23 @@ function coinFlipTails() {
 // }
 
 
-function claimPrize() {
+function claimPrize(str) {
+  let price = 0;
+  let prize = '';
+  if (str === 'prize1') {
+    price = 1500;
+    prize = 'Mobil';
+  } else if (str === 'prize2') {
+    price = 50000;
+    prize = 'Rumah';
+  } else {
+    price = 800000;
+    prize = 'Pulau';
+  }
   if (coin >= price) {
     coin -= price;
-    alert('Selamat');
+    document.getElementById("coin").innerText = `Coins: ${coin}`
+    document.getElementById("coin2").innerText = `Coins: ${coin}`
+    alert(`Selamat Anda mendapatkan ${prize}`);
   } else alert('Hadiah tidak bisa diambil\nSilahkan judi lagi!');
 }
