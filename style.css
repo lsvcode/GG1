@@ -44,6 +44,21 @@ button:hover {
   cursor: pointer;
 }
 
+.button-claim {
+  background: none;
+  border: 2px solid green;
+  padding: 12px 30px 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  position: relative;
+  color: white;
+  z-index: 0;
+  font-size: 12px;
+  outline: none;
+  margin: 5px;
+}
+
 .outcome {
   height: 200px;
   width: 200px;
@@ -127,11 +142,14 @@ button:hover {
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url('rj7jnMT8Koagd3oi3gBFzVGH-1536x753.jpeg');
-  background-position: center;
-  background-size: auto;
+  background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?t=st=1645730967~exp=1645731567~hmac=c064b28354d1b9f90f07c7e7240d735d1ae611bd886e0973bddd790331b3744d&w=1380");
+}
+
+.img-banner {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
 }
 
 .navbar {
@@ -184,6 +202,7 @@ body {
 .menu-title {
     padding: 10px 20px;
     text-align: center;
+    color: white;
 }
 
 .p-form {
@@ -212,6 +231,43 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
 text-align: center;
+}
+
+.middle-dock-content {
+  background-color: white;
+  width: 80%;
+  border: 15px solid green;
+  border-radius: 20px;
+  padding: 50px;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+}
+
+.lower-dock-content {
+  background-image: linear-gradient(70deg, #EADEDB 0%, #7c88f0 50%, #b0d4ec 75%);
+  width: 30%;
+  border-radius: 20px;
+  padding: 50px;
+  margin-left: 35%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.mySlides {display:none;}
+
+.footer-bawah {
+  height: 30px;
+  padding: 3px;
+  background-image: linear-gradient(140deg, #EADEDB 0%, #f0a212 50%, #BFD641 75%);
+  color: black;
+  text-align: center;
+}
+
+#banner-content {
+  width: 200%;
+  padding: 50px;
 }
 
 #form-login {
@@ -294,3 +350,15 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif
+ }
+
+ /* body {
+     background: #ecf0f3
+ } */
