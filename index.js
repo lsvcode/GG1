@@ -1,6 +1,24 @@
-let nama = ''
-let deposito = 0
-let coin = deposito / 1000
+// let nama = ''
+// let deposito = 0
+// let coin = 0;
+
+
+const form = document.getElementById('form-login');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  window.location.href = "game.html";
+});
+
+
+const user = {};
+user.nama = document.getElementById('username').value;
+user.deposito = Number(document.getElementById('deposit').value);
+user.coin = user.deposito / 100;
+
+console.log(user);
+
+const game = document.getElementById('game');
+game.innerText = `${user.nama}`;
 
 
 function coinFlip() {
@@ -28,4 +46,8 @@ function coinFlip() {
     }, 800);
       
   });
+}
+
+function switchPage(from, to) {
+  
 }
