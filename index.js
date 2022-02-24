@@ -27,6 +27,7 @@ function nextPage(from, to) {
   }
 }
 
+
 function jumpPage(to) {
   if (to === 'page1') {
     document.querySelector('#' + to).style.display = 'flex'
@@ -49,7 +50,6 @@ function jumpPage(to) {
     document.getElementById('page3').classList.add('active')
     document.getElementById('page1').classList.remove('active')
     document.getElementById('page2').classList.remove('active')
-
   }
 }
 
