@@ -15,9 +15,9 @@
 
 <body>
   <div class="navbar">
-    <a class="active" href="#page1" onclick="jumpPage('page1')">Home</a>
-    <a href="#page2" onclick="jumpPage('page2')">Flip Coin</a>
-    <a href="#page3" onclick="jumpPage('page3')">Checkout</a>
+    <a id="nav-page1" class="active" href="#page1" onclick="jumpPage('page1')">Home</a>
+    <a id="nav-page2" onclick="jumpPage('page2')">Flip Coin</a>
+    <a id="nav-page3" onclick="jumpPage('page3')">Checkout</a>
   </div>
 
   <div id="page1">
@@ -75,7 +75,10 @@
 
   <div id="page3" style="display: none;">
     <h1 class="menu-title">Pilih Hadiah Anda</h1>
-
+    <div class="box">
+      <label id="user-id2"></label>
+      <label id="coin2"></label>
+    </div>
     <div class="flex-box">
       <img
         src="https://cdnt.orami.co.id/unsafe/468x586/cdn-cas.orami.co.id/parenting/images/Selak_kerupak_basah.width-800.jpg"
@@ -85,9 +88,9 @@
     </div>
 
     <div class="Claim">
-      <button class="button" id="claim-button1">Claim Item A</button>
-      <button class="button" id="claim-button2">Claim Item B</button>
-      <button class="button" id="claim-button3">Claim Item C</button>
+      <button class="button" id="claim-button1" onclick="claimPrize('prize1')">Claim Item A<br>150 Coin</button>
+      <button class="button" id="claim-button2" onclick="claimPrize('prize2')">Claim Item B<br>50.000 Coin</button>
+      <button class="button" id="claim-button3" onclick="claimPrize('prize3')">Claim Item C<br>800.000 Coin</button>
     </div>
   </div>
   <script src="index.js"></script>
