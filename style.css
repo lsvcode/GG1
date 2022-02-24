@@ -49,14 +49,14 @@ button:hover {
 }
 
 .button-claim {
-  background: none;
+  background: white;
   border: 2px solid green;
   padding: 12px 30px 11px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 5px;
   position: relative;
-  color: white;
+  color: black;
   z-index: 0;
   font-size: 12px;
   outline: none;
@@ -229,6 +229,17 @@ body {
   text-align:center;
 }
 
+.rules {
+  background-color: white;
+  width: 80%;
+  border: 15px solid green;
+  border-radius: 20px;
+  padding: 50px;
+  margin-left: 10%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+}
+
 .claim {
   padding: 0;
 margin-left: auto;
@@ -251,6 +262,7 @@ text-align: center;
 .lower-dock-content {
   background-image: linear-gradient(70deg, #EADEDB 0%, #7c88f0 50%, #b0d4ec 75%);
   width: 30%;
+  border: solid red 5px;
   border-radius: 20px;
   padding: 50px;
   margin-left: 35%;
@@ -268,6 +280,24 @@ text-align: center;
   color: black;
   text-align: center;
 }
+
+#claim-button1 {
+left: 15%;
+margin-top: 2%;
+margin-bottom: 4%;
+}
+
+#claim-button2 {
+  left: 29%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  }
+
+  #claim-button3 {
+    left: 43.4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    }
 
 #banner-content {
   width: 200%;
