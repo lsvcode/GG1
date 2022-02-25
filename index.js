@@ -110,8 +110,9 @@ function coinFlipHead() {
       outcome.textContent = 'tails';
       coin -= 500
     } else if (randomNumber == 5) {
-      outcome.textContent = 'tails';
-      coin -= 500
+      outcome.textContent = 'heads'
+      coin *= 2
+      alert ("SELAMAT ANDA MENDAPATKAN JACKPOT!")
     }
 
     document.getElementById("coin").innerText = `Coins: ${coin}` 
@@ -144,8 +145,9 @@ function coinFlipTails() {
       outcome.textContent = "heads"
       coin -= 500
     } else if (randomNumber == 5) {
-      outcome.textContent = "heads"
-      coin -= 500
+      outcome.textContent = "tails"
+      coin *= 2
+      alert ("SELAMAT ANDA MENDAPATKAN JACKPOT!")
     }
 
     document.getElementById("coin").innerText = `Coins: ${coin}`
