@@ -423,7 +423,7 @@ margin-bottom: 4%;
   background-color: transparent; 
   text-align: center;
   width: 20%;
-  height: 50px;
+  height: 5px;
   position: absolute;
   top: 75px;
   right: 0;
@@ -550,7 +550,6 @@ margin-bottom: 4%;
      background: #ecf0f3
  } */
 
- 
 ::-webkit-scrollbar {
   width: 17px;
 }
@@ -566,3 +565,4 @@ margin-bottom: 4%;
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(238, 128, 128);
 }
+
