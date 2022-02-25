@@ -99,16 +99,16 @@ function coinFlipHead() {
   setTimeout(function() {
     if (randomNumber == 1) {
       outcome.textContent = 'heads';
-      coin += 500;
+      coin += 1000;
     } else if (randomNumber == 2) {
       outcome.textContent = 'tails';
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 3) {
       outcome.textContent = 'tails';
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 4) {
       outcome.textContent = 'tails';
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 5) {
       coin *= 2
       alert ("SELAMAT ANDA MENDAPATKAN JACKPOT!")
@@ -134,16 +134,16 @@ function coinFlipTails() {
   setTimeout(function() {
     if (randomNumber == 1) {
       outcome.textContent = 'heads';
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 2) {
       outcome.textContent = 'tails';
-      coin += 500
+      coin += 1000
     } else if (randomNumber == 3) {
       outcome.textContent = "heads"
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 4) {
       outcome.textContent = "heads"
-      coin -= 500
+      coin -= 1000
     } else if (randomNumber == 5) {
       coin *= 2
       alert ("SELAMAT ANDA MENDAPATKAN JACKPOT!")
