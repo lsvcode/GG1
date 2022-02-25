@@ -24,7 +24,6 @@
   </div>
   
   <img src="https://raw.githubusercontent.com/WibuSyariah/hackbet99/main/img/maskot.png" class="mascot1">
-
   
   <div id="page1">
 <div class="w3-content w3-display-container" id="banner-content">
@@ -95,19 +94,23 @@
   </div>
   
     <div class="flex-box">
+      <div class="card">
       <img
         src="https://img.inews.co.id/media/822/files/inews_new/2020/03/02/truk_tronton_jatuh.jpg"
         class="img">
+        <button class="button-claim" id="claim-button1" onclick="claimPrize('prize1')">Claim Item A<br>150 Coin</button>
+      </div>
+
+      <div class="card">
       <img src="https://hobikoe.com/uploads/all/WztySdwdqq8y3wXyeGqNY0wL7iROTIIrjX7gCGQO.jpeg" class="img">
-      <img src="https://asset.kompas.com/crops/mg6FCyhBq5FdqE_0W7jwrfxRksA=/0x0:0x0/750x500/data/photo/2020/04/08/5e8d480b4c151.jpg" class="img">
+      <button class="button-claim" id="claim-button2" onclick="claimPrize('prize2')">Claim Item B<br>50.000 Coin</button>
     </div>
 
-    <div class="Claim">
-      <button class="button-claim" id="claim-button1" onclick="claimPrize('prize1')">Claim Item A<br>150 Coin</button>
-      <button class="button-claim" id="claim-button2" onclick="claimPrize('prize2')">Claim Item B<br>50.000 Coin</button>
+      <div class="card">
+      <img src="https://asset.kompas.com/crops/mg6FCyhBq5FdqE_0W7jwrfxRksA=/0x0:0x0/750x500/data/photo/2020/04/08/5e8d480b4c151.jpg" class="img">
       <button class="button-claim" id="claim-button3" onclick="claimPrize('prize3')">Claim Item C<br>800.000 Coin</button>
     </div>
-  
+    </div>
 
     <div class="rules">
       <h1>Rules</h1>
@@ -128,7 +131,7 @@
 
   
   <footer class="footer-bawah">
-    <p>@hactive9</p>
+    <p>@Team Hactive9</p>
   </footer>
 
   <script src="index.js"></script>
