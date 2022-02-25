@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 85vh;
 }
 
 button {
@@ -147,6 +147,25 @@ button:hover {
 
 body {
   background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?t=st=1645730967~exp=1645731567~hmac=c064b28354d1b9f90f07c7e7240d735d1ae611bd886e0973bddd790331b3744d&w=1380");
+  z-index: 0;
+}
+
+.mascot1 {
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+  left: 0;
+  margin-top: 30%;
+  display: none;
+}
+
+.mascot2 {
+  position: absolute;
+  z-index: -1;
+  width: 40%;
+  right: 0;
+  margin-top: 40%;
+  display: none;
 }
 
 .img-banner {
@@ -158,7 +177,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-image: linear-gradient(70deg, #070505 0%, #4b4343 50%, #f9fbfd 75%);
   margin-top: 0px;
   margin-bottom: auto;
 }
@@ -204,9 +223,18 @@ body {
 }
 
 .menu-title {
-    padding: 10px 20px;
     text-align: center;
     color: white;
+    background-image: linear-gradient(70deg, #EADEDB 0%, #7c88f0 50%, #b0d4ec 75%);
+  width: 30%;
+  border: solid red 5px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 35%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  justify-content: center;
 }
 
 .p-form {
@@ -215,6 +243,7 @@ body {
 }
 
 .img {
+  border: solid white 15px;
   height: 400px;
   width: 300px;
   vertical-align: middle;
@@ -260,7 +289,7 @@ text-align: center;
 }
 
 .lower-dock-content {
-  background-image: linear-gradient(70deg, #EADEDB 0%, #7c88f0 50%, #b0d4ec 75%);
+  background-image: linear-gradient(70deg, #EADEDB 0%, #9294a1 50%, #b0d4ec 75%);
   width: 30%;
   border: solid red 5px;
   border-radius: 20px;
@@ -276,10 +305,12 @@ text-align: center;
 .footer-bawah {
   height: 30px;
   padding: 3px;
+  border: solid black 3px;
   background-image: linear-gradient(140deg, #EADEDB 0%, #f0a212 50%, #BFD641 75%);
   color: black;
   text-align: center;
 }
+
 
 #claim-button1 {
 left: 15%;
@@ -368,8 +399,40 @@ margin-bottom: 4%;
   width: 20%;
   height: 50px;
   position: absolute;
-  top: 10;
+  top: 75px;
   right: 0;
+  z-index: -1;
+}
+
+.box2 {
+  background-color: #e4f5ef; 
+  text-align: center;
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  top: 30;
+  right: 0;
+}
+
+.take-prize1 {
+  position: absolute;
+  left: 35%;
+  right: 0%;
+  width: 140px;
+}
+
+.take-prize2 {
+  position: absolute;
+  left: 45.3%;
+  right: 0%;
+  width: 140px;
+}
+
+.take-prize3 {
+  position: absolute;
+  left: 55.5%;
+  right: 0%;
+  width: 140px;
 }
 
 .box {
@@ -380,20 +443,27 @@ margin-bottom: 4%;
   position: absolute;
   top: 10;
   right: 0;
+  z-index: -1;
 }
 
 #user-id {
   text-align: center;
   vertical-align: middle;
+  font-size: 12px;
 }
 
 #saldo {
   text-align: center;
   vertical-align: middle;
+  font-size: 12px;
 }
 #headsButton {
   justify-content: center;
   background-color: white;
+}
+
+#box-invincible {
+  width: 50%;
 }
 
 #tailsButton {
