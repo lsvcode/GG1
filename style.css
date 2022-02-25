@@ -159,6 +159,9 @@ body {
   z-index: 1;
 }
 
+strong {
+  color: #08060a;
+}
 
 .img-banner {
   height: 100%;
