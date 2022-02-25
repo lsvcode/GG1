@@ -152,6 +152,10 @@ body {
   background-image: url("https://raw.githubusercontent.com/WibuSyariah/hackbet99/mainlatestsennap13/img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
   z-index: 0;
   height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .mascot1 {
