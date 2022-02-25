@@ -49,7 +49,8 @@ button:hover {
 }
 
 .button-claim {
-  background: white;
+  top: 10%;
+  background: rgb(153, 224, 174);
   border: 2px solid green;
   padding: 12px 30px 11px;
   text-transform: uppercase;
@@ -60,7 +61,8 @@ button:hover {
   z-index: 0;
   font-size: 12px;
   outline: none;
-  margin: 5px;
+  margin: auto;
+  width: 75%;
 }
 
 .outcome {
@@ -145,27 +147,29 @@ button:hover {
   }
 }
 
+
 body {
-  background-image: url("https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?t=st=1645730967~exp=1645731567~hmac=c064b28354d1b9f90f07c7e7240d735d1ae611bd886e0973bddd790331b3744d&w=1380");
+  background-image: url("https://raw.githubusercontent.com/WibuSyariah/hackbet99/mainlatestsennap13/img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg");
   z-index: 0;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .mascot1 {
-  position: absolute;
-  z-index: -1;
-  width: 40%;
-  left: 0;
-  margin-top: 30%;
-  display: none;
+  position: sticky;
+  top: 75%;
+  margin-top: -250px;
+  left: 0rem;
+  width: 200px;
+  z-index: 1;
 }
 
-.mascot2 {
-  position: absolute;
-  z-index: -1;
-  width: 40%;
-  right: 0;
-  margin-top: 40%;
-  display: none;
+
+strong {
+  color: #08060a;
 }
 
 .img-banner {
@@ -220,14 +224,19 @@ body {
 
 .p-content {
     padding: 20px 10px;
+    font-family: "Roboto Condensed";
+    color: white;
+    text-align: justify;
+    margin: 10px 5px;
+    font-size: 20px;
 }
 
 .menu-title {
     text-align: center;
     color: white;
-    background-image: linear-gradient(70deg, #EADEDB 0%, #7c88f0 50%, #b0d4ec 75%);
+    background-image: linear-gradient(70deg, #a09b99 0%, #75778a 50%, #454a4c 75%);
   width: 30%;
-  border: solid red 5px;
+  border: solid rgb(14, 9, 9) 5px;
   border-radius: 20px;
   padding: 20px;
   margin-left: 35%;
@@ -244,29 +253,39 @@ body {
 
 .img {
   border: solid white 15px;
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   vertical-align: middle;
   border-radius: 10px;
-  margin-left: 4%;
-  margin-right: 4.8%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10%;
 }
 
 .flex-box {
-  margin-left: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   text-align:center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
 }
 
 .rules {
-  background-color: white;
+  background-color: rgb(126, 125, 143);
   width: 80%;
-  border: 15px solid green;
-  border-radius: 20px;
+  height: 10%;
   padding: 50px;
   margin-left: 10%;
   margin-right: 30%;
   margin-bottom: 5%;
+  margin-top: 10%;
+  opacity: 0.8;
 }
 
 .claim {
@@ -275,17 +294,25 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 20px;
 text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.logo {
+height: 70px;
+right: 3rem;
+top: -15px;
+position: absolute;
 }
 
 .middle-dock-content {
-  background-color: white;
+  background-color: rgb(126, 125, 143);
   width: 80%;
-  border: 15px solid green;
-  border-radius: 20px;
   padding: 50px;
   margin-left: 10%;
   margin-right: 30%;
   margin-bottom: 5%;
+  opacity: 0.8;
 }
 
 .lower-dock-content {
@@ -311,21 +338,21 @@ text-align: center;
   text-align: center;
 }
 
-
 #claim-button1 {
-left: 15%;
+
 margin-top: 2%;
 margin-bottom: 4%;
 }
 
+
 #claim-button2 {
-  left: 29%;
+
   margin-top: 2%;
   margin-bottom: 4%;
   }
 
   #claim-button3 {
-    left: 43.4%;
+
     margin-top: 2%;
     margin-bottom: 4%;
     }
@@ -344,7 +371,6 @@ margin-bottom: 4%;
   text-align: center;
   width: auto;
   height: 4%;
-  margin-top: 5px;
 }
 
 #deposit {
@@ -394,7 +420,7 @@ margin-bottom: 4%;
 }
 
 .box1 {
-  
+  background-color: transparent; 
   text-align: center;
   width: 20%;
   height: 5px;
@@ -415,28 +441,19 @@ margin-bottom: 4%;
 }
 
 .take-prize1 {
-  position: absolute;
-  left: 35%;
-  right: 0%;
-  width: 140px;
+  display: none;
 }
 
 .take-prize2 {
-  position: absolute;
-  left: 45.3%;
-  right: 0%;
-  width: 140px;
+  display: none;
 }
 
 .take-prize3 {
-  position: absolute;
-  left: 55.5%;
-  right: 0%;
-  width: 140px;
+  display: none;
 }
 
 .box {
-   
+  background-color: transparent; 
   text-align: center;
   width: 20%;
   height: 50px;
@@ -449,20 +466,7 @@ margin-bottom: 4%;
 #user-id {
   background-color: whitesmoke;
   width: 80%;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 12px;
-  border: 2px solid #2B303A;
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 36px;
-  text-align: center;
-  font-size: 15px
-}
-
-#coin {
-  background-color: whitesmoke;
-  width: 80%;
+  height: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 12px;
@@ -477,6 +481,23 @@ margin-bottom: 4%;
 #user-id2 {
   background-color: whitesmoke;
   width: 80%;
+  height: 30px;
+  margin-top: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  border: 2px solid #2B303A;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 36px;
+  text-align: center;
+  font-size: 15px
+}
+
+#coin {
+  background-color: whitesmoke;
+  width: 80%;
+  height: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 12px;
@@ -491,6 +512,7 @@ margin-bottom: 4%;
 #coin2 {
   background-color: whitesmoke;
   width: 80%;
+  height: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 12px;
@@ -499,14 +521,9 @@ margin-bottom: 4%;
   padding: 6px 12px;
   border-radius: 36px;
   text-align: center;
-  font-size: 15px
+  font-size: 15px;
 }
 
-#saldo {
-  text-align: center;
-  vertical-align: middle;
-  font-size: 12px;
-}
 #headsButton {
   justify-content: center;
   background-color: white;
@@ -532,13 +549,20 @@ margin-bottom: 4%;
  /* body {
      background: #ecf0f3
  } */
-.box {
-  
+
+::-webkit-scrollbar {
+  width: 17px;
 }
 
- /* <div class="box">
-      <label id="user-id"></label>
-      <label id="coin"></label>
-    </div>
-<label id="user-id"></label>
-      <label id="coin"></label> */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(75, 67, 67);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(238, 128, 128);
+}
+
